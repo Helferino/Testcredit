@@ -1,0 +1,21 @@
+{
+  "name": "hyperia",
+  "version": "1.0.0",
+  "description": "Zadanie",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "author": "Jakub Urban",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
+    "sass": "^1.25.0"
+  }
+}

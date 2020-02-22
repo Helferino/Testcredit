@@ -1,0 +1,24 @@
+$theme-colors: (
+  "primary": #473080,
+  "secondary": #d52884,
+  "secondary-light": #ff76c8,
+  "light": #fff,
+  "dark": #242011,
+  "warning": #fcd520,
+  // "danger": #ff95b3
+);
+
+$navbar-nav-link-padding-x: 0.85rem;
+$navbar-light-color: map-get($theme-colors, "primary");
+$navbar-light-hover-color: map-get($theme-colors, "light");
+
+$link-color: map-get($theme-colors, "secondary");
+$link-decoration: underline;
+
+$btn-font-weight: 500;
+$btn-font-size: 1rem;
+$btn-padding-y: 0.85rem;
+
+$label-margin-bottom: 0.25rem;
+
+$input-color: map-get($theme-colors, "dark");

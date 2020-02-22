@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testcredit.cz - Zadanie</title>
+    <link rel="stylesheet" href="../src/scss/main.scss" />
+  </head>
+
+  <body class="bd">
+    <!-- Header -->
+    <div class="container-fluid">
+      <!-- Navbar -->
+      <div class="row mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light col-12">
+          <a class="navbar-brand"
+            ><img src="./assets/logo.png" height="64" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a id="jakPostupovat" class="nav-link" href="#"
+                  >Jak postupovat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a id="vyhodyNavbar" class="nav-link" href="#">Výhody půjčky</a>
+              </li>
+              <li class="nav-item">
+                <a id="referenceNavbar" class="nav-link" href="#">Reference</a>
+              </li>
+              <li class="nav-item">
+                <a id="chciSiPujcitNavbar" class="nav-link framed" href="#"
+                  >Chci si půjčit</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="position-relative">
+        <img class="headerGirl" src="assets/hero.png" alt="frontGirl" />
+      </div>
+
+      <!-- Content -->
+      <div class="row mx-0">
+        <div class="header col-10 col-lg-6 col-xl-4">
+          <div class="col">
+            <div class="row">
+              <h1 class="text-primary w-100">
+                Testcredit půjčka <br />až do 250 000 KČ
+              </h1>
+              <span class="text-dark"
+                >Půjčte si na cokoliv jednoduše online!</span
+              >
+            </div>
+          </div>
+          <div class="btnGroup row">
+            <div class="col-12 col-sm-6">
+              <button
+                id="chciSiPujcit"
+                type="button"
+                class="btn btn-primary w-100 text-uppercase"
+              >
+                Chci si půjčit
+              </button>
+            </div>
+            <div class="col-12 col-sm-6">
+              <button
+                id="vyhody"
+                type="button"
+                class="btn btn-outline-primary w-100 text-uppercase "
+              >
+                Výhody
+              </button>
+            </div>
+          </div>
+
+          <div class="row lastClient">
+            <div class="col-12 text-center">
+              <div class="content shadow bg-light rounded-lg">
+                <span class="text-weight-normal">Poslední žadatel:</span>
+                <h5 class="text-primary">
+                  Natálie , Vsetín. <br />Pani Natálie dnes požádala o 45 500 Kč
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="slicer slicerHeader"></div>
+    <div class="featureSection container-fluid bg-light">
+      <div id="features" class="container-sm">
+        <h2 class="text-center text-secondary">Výhody půjčky</h2>
+        <div class="row">
+          <div class="featureCard col-12 col-md-6 col-lg-3">
+            <img src="assets/identity-theft.png" alt="identifyTheftIcon" />
+            <h5>
+              Online žádost
+            </h5>
+            <p>
+              Pomocí <a id="onlineFormular" href="#">online formuláře</a> je
+              získání půjčky rychlé a jednoduché.
+            </p>
+          </div>
+          <div class="featureCard col-12 col-md-6 col-lg-3">
+            <img src="assets/management.png" alt="managmentIcon" />
+            <h5>
+              Rychlost
+            </h5>
+            <p>
+              Vaši žádost okamžite zpracuje automatizovaný system.
+            </p>
+          </div>
+          <div class="featureCard col-12 col-md-6 col-lg-3">
+            <img src="assets/planning.png" alt="planningIcon" />
+            <h5>
+              Parametry půjčky
+            </h5>
+            <p>
+              Bezúčelová půjčka 4 000 - 250 000 Kč
+            </p>
+          </div>
+          <div class="featureCard col-12 col-md-6 col-lg-3">
+            <img src="assets/handshake.png" alt="handshakeIcon" />
+            <h5>
+              Jasné podmínky
+            </h5>
+            <p>
+              Peníze můžete získat bez zbytečného papírování a s výhodnými
+              podmínkami
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 col-lg-8 mx-auto mt-5 px-0">
+          <h4 class="text-primary text-center">
+            Dnes požádalo půjčku již
+            <span class="text-secondary">87 klientů.</span>
+          </h4>
+          <div class="btnGroup row mt-4 mx-3">
+            <div class="col col-md-6">
+              <button
+                type="button"
+                id="chciSePridat"
+                type="button"
+                class="btn btn-primary w-100 text-uppercase"
+              >
+                Chci se pridat
+              </button>
+            </div>
+            <div class="col-md-6">
+              <button
+                type="button"
+                id="jakPozadatOPujcku"
+                type="button"
+                class="btn btn-outline-primary w-100 text-uppercase "
+              >
+                Jak požá dat o půjčku
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block">
+      <div class="slicer slicerMirror"></div>
+    </div>
+
+    <!-- Form -->
+    <div class="formSection container-fluid px-0 bg-secondary-light">
+      <div class="col-12 col-xl-11 mx-auto">
+        <div class="row">
+          <div id="request" class="leftPanel col-12 col-md-12 col-lg-5">
+            <div class="row description">
+              <h2 class="text-primary">NEZÁVAZNÁ žádost</h2>
+              <p class="text-primary pb-5 pt-3">
+                Není vám něco jasné, nebo se chcete něco zeptat? Vyplňte
+                nezávaznou žádost a obchodní zástupce poskytovatele vám zodpoví
+                všechny otázky.
+              </p>
+            </div>
+            <div class="row">
+              <div class="formCardSpacer"></div>
+              <div class="formCard col-11 mx-auto">
+                <div class="body row shadow ">
+                  <div class="col-12 col-xl-2">
+                    <span>1.</span>
+                  </div>
+                  <div class="col">
+                    <h5>Vyplňte nezávaznou žádost</h5>
+                    <p>
+                      Pokut máte zájem o půjčku, nebo se chcete zeptat, vyplňte
+                      zezávaznou žádost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="formCard col-11 mt-3 mx-auto">
+                <div class="body row shadow">
+                  <div class="col-12 col-xl-2">
+                    <span>2.</span>
+                  </div>
+                  <div class="col">
+                    <h5>Budete kontaktován</h5>
+                    <p>
+                      Kontaktuje vás obchodní zástupce poskytovatele a probere s
+                      vámi detaily.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="formCard col-11 mt-3 mx-auto">
+                <div class="body row shadow">
+                  <div class="col-12 col-xl-2">
+                    <span>3.</span>
+                  </div>
+                  <div class="col">
+                    <h5>Hotovo!</h5>
+                    <p>
+                      Po podepsaní smlouvy s pokytovatelem vám budou peníze
+                      odeslány na účet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="px-3 col col-xl-6 ml-auto">
+            <form class="formPanel" id="form">
+              <h5 class="pb-1 pt-4 text-uppercase">Výše půjčky</h5>
+              <div class="col px-0">
+                <div class="form-row form-group">
+                  <div class="form-group col-12 col-md-8 pr-4">
+                    <input
+                      id="loanRange"
+                      min="4000"
+                      max="250000"
+                      value="100000"
+                      step="1000"
+                      type="range"
+                      class="form-control-range"
+                    />
+                    <div class="d-flex justify-content-between">
+                      <label for="loanSlider" class="mt-1">4000 Kč</label>
+                      <label for="loanSlider" class="mt-1">250 000 Kč</label>
+                    </div>
+                  </div>
+                  <div class="input-group col">
+                    <input
+                      id="loanInput"
+                      type="number"
+                      class="form-control"
+                      value="100000"
+                      min="4000"
+                      max="250000"
+                      required
+                    />
+                    <div class="input-group-text currencyTag">Kč</div>
+                  </div>
+                </div>
+              </div>
+              <h5 class="py-2 text-uppercase">Osobní informace</h5>
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formFirstname">Jméno</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formFirstname"
+                    class="form-control"
+                    placeholder="Jan"
+                    required
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formLastname">Příjmení</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formLastname"
+                    class="form-control "
+                    placeholder="Novak"
+                    required
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formIdNumber">Rodné číslo</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formIdNumber"
+                    class="form-control"
+                    placeholder="1234562392"
+                    required
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formIdCardNumber">Číslo OP</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formIdCardNumber"
+                    class="form-control"
+                    placeholder="AB123456"
+                    required
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formEmail">Email</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formEmail"
+                    class="form-control"
+                    placeholder="@"
+                    required
+                    type="email"
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formPhone">Telefonní číslo</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formPhone"
+                    class="form-control"
+                    placeholder="+421 912 345 678"
+                    required
+                    type="number"
+                  />
+                </div>
+              </div>
+
+              <h5 class="py-2 text-uppercase">Adresa</h5>
+              <div class="form-row">
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formStreet">Ulice</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formStreet"
+                    class="form-control"
+                    placeholder="Solnohradskas"
+                    required
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formHouseNumber">Číslo domu</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formHouseNumber"
+                    class="form-control"
+                    placeholder="34"
+                    required
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formCity">Město</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formCity"
+                    class="form-control"
+                    placeholder="Praha"
+                    required
+                  />
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  <label for="formPostalNumber">PSČ</label>
+                  <span class="text-danger">*</span>
+                  <input
+                    id="formPostalNumber"
+                    class="form-control"
+                    placeholder="18100"
+                    required
+                    type="number"
+                  />
+                </div>
+              </div>
+              <!-- TOS -->
+              <div class="formTOS">
+                <p class="mt-4">
+                  Zaškrtněte souhlas s pokytnutím osobních údajů:
+                </p>
+                <div class="form-check custom-control pl-0">
+                  <input class="checkBox mr-1" type="checkbox" required />
+                  <span
+                    >pro účely
+                    <a class="text-primary" href="#"
+                      >marketingové komunikace</a
+                    ></span
+                  >
+                </div>
+                <div class="form-check pl-0">
+                  <input class="checkBox mr-1" type="checkbox" required />
+                  <span
+                    >pro účely
+                    <a class="text-primary" href="#">poskytnutí služby</a></span
+                  >
+                </div>
+              </div>
+              <div class="mt-4">
+                <button class="btn btn-primary w-100 primaryGlow" type="submit">
+                  Odeslat
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="position-relative col-12">
+        <img src="assets/girl.png" class="formGirl" alt="dancingGirl" />
+      </div>
+    </div>
+
+    <!-- Testimontial -->
+    <div class="d-none d-lg-block">
+      <div class="slicer slicerMirror slicerTestimontial"></div>
+    </div>
+    <div id="testimontial" class="testimontialSection container-fluid bg-white">
+      <div class="row">
+        <h2 class="text-primary mx-auto">Reference</h2>
+      </div>
+      <div class="row"><p class="mx-auto">spokojených zákazníků</p></div>
+
+      <div class="row mt-5">
+        <!-- Static -->
+        <div class="d-none d-lg-block container-sm">
+          <div class="row">
+            <div class="col-4">
+              <div class="testimontialCard shadow active">
+                <div class="wrapper">
+                  <p>
+                    Díky Testcredit jsme se dostala z nepříjemné finančńí
+                    situace. Měl jsem nečekané výdaje a žádné úsporý. S VIP
+                    půjčkou jsme však všechno rychle vyřešil
+                  </p>
+                  <span class="font-weight-bold">Alena, Brno</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="testimontialCard shadow">
+                <div class="wrapper">
+                  <p>
+                    Rychlost a žádné zbytečné papírovaní, to jsou věci, které
+                    lidé vždy ocení. Online půjčka mi pomohla, když jsme to
+                    nejvíc potřeboval.
+                  </p>
+                  <span class="font-weight-bold">Petr, Ostrava</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="testimontialCard shadow">
+                <div class="wrapper">
+                  <p>
+                    Perfektní! Vše probíhalo tak jak mělo. Velmi příjemne a
+                    jednoduché vybavení. Vřele doporučjuí i náročným zákazníkům.
+                  </p>
+                  <span class="font-weight-bold">Jan, Beroun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="col-12 col-sm-10 col-md-6 mx-auto d-lg-none">
+          <div
+            id="testimontialCarousel"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner shadow">
+              <div class="testimontialCard carousel-item active">
+                <div class="wrapper">
+                  <p>
+                    Díky Testcredit jsme se dostala z nepříjemné finančńí
+                    situace. Měl jsem nečekané výdaje a žádné úsporý. S VIP
+                    půjčkou jsme však všechno rychle vyřešil
+                  </p>
+                  <span class="font-weight-bold">Alena, Brno</span>
+                </div>
+              </div>
+              <div class="testimontialCard carousel-item">
+                <div class="wrapper">
+                  <p>
+                    Rychlost a žádné zbytečné papírovaní, to jsou věci, které
+                    lidé vždy ocení. Online půjčka mi pomohla, když jsme to
+                    nejvíc potřeboval.
+                  </p>
+                  <span>Petr, Ostrava</span>
+                </div>
+              </div>
+              <div class="testimontialCard carousel-item">
+                <div class="wrapper">
+                  <p>
+                    Perfektní! Vše probíhalo tak jak mělo. Velmi příjemne a
+                    jednoduché vybavení. Vřele doporučjuí i náročným zákazníkům.
+                  </p>
+                  <span>Jan, Beroun</span>
+                </div>
+              </div>
+              <div class="testimontialCard carousel-item">
+                <div class="wrapper">
+                  <p>
+                    Díky Testcredit jsme se dostala z nepříjemné finančńí
+                    situace. Měl jsem nečekané výdaje a žádné úsporý. S VIP
+                    půjčkou jsme však všechno rychle vyřešil
+                  </p>
+                  <span>Alena, Brno</span>
+                </div>
+              </div>
+              <div class="testimontialCard carousel-item">
+                <div class="wrapper">
+                  <p>
+                    Rychlost a žádné zbytečné papírovaní, to jsou věci, které
+                    lidé vždy ocení. Online půjčka mi pomohla, když jsme to
+                    nejvíc potřeboval.
+                  </p>
+                  <span>Petr, Ostrava</span>
+                </div>
+              </div>
+            </div>
+            <ol class="carousel-indicators mt-4">
+              <li
+                data-target="#testimontialCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#testimontialCarousel" data-slide-to="1"></li>
+              <li data-target="#testimontialCarousel" data-slide-to="2"></li>
+              <li data-target="#testimontialCarousel" data-slide-to="3"></li>
+              <li data-target="#testimontialCarousel" data-slide-to="4"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div id="referenceButton" class="row d-none d-lg-block">
+        <div class="col-2 mx-auto">
+          <button id="chciSiPujcitReference" class="btn btn-primary w-100">
+            Chci si půjčit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footerSection bg-white pb-3">
+      <div class="line bg-primary"></div>
+      <p class="text-primary text-center m-0 mx-auto">
+        © 2019 Testcredit.cz <br class="d-lg-none" />Všechny práva vyhrazené.
+      </p>
+    </div>
+
+    <script src="../src/index.js"></script>
+  </body>
+</html>
